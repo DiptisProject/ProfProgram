@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+</head>
+<body>
+<script type="text/javascript">
+    class Person {
+        constructor(name, contact, address) {
+            this.name = name;
+            this.contact = contact;
+            this.address = address;
+        }
+
+        display() {
+            document.write("Name: " + this.name + "<br>");
+            document.write("Contact: " + this.contact + "<br>");
+            document.write("Address: " + this.address + "<br>");
+        }
+    }
+
+    var person1 = new Person('Trupti', '8698823451', 'Pune');
+
+    var person2 = {
+        name: 'Dipti',
+        contact: '1234567890',
+        address: 'Satara'
+    };
+
+    person1.display.call(person2);
+</script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	let Person={
+           'id':'100',
+           'name':'abc',
+           'age':'20',
+		
+		display:function()
+		{
+			document.write("Id :"+this.id);
+			document.write("<br>name :"+this .name);
+			document.write("<br>Age :"+this.age);
+		}
+	}
+	 Person.display();
+
+    Employee._proto_=Person;
+    Employee.display();
+      
+</script>
+</body>
+</html>

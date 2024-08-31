@@ -1,0 +1,11 @@
+var n1 = 30;
+var n2 = 20;
+console.log("Addition:" + (n1 + n2));
+console.log("Subtraction:" + (n1 - n2));
+console.log("Multiplication:" + (n1 * n2));
+console.log("Division:" + (n1 / n2));
+var b = true;
+console.log("Boolean:" + b);
+var n = 10;
+console.log(n);
+n = "abc";

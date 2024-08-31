@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+   <script type="text/javascript">
+   	
+      class Student{
+           
+           constructor(rno,name)
+           {
+           	this.rno=rno;
+           	this.name=name;
+           }
+
+      }
+
+       var s=new Student(100,"abc"); 
+
+      document.write("Roll no :"+s.rno);
+      document.write("<br>Name :"+s.name);
+      document.write("<br>Contact :"+s.contact);
+
+      Student.prototype.contact="9999999";
+
+        document.write("<hr>");
+      
+        Student.prototype.display=function(){
+
+      	document.write("Roll no :"+s.rno);
+        document.write("<br>Name :"+s.name);
+
+         document.write("<br>Contact :"+s.contact);
+      }
+
+      s.display();
+
+   </script>
+
+
+</body>
+</html>

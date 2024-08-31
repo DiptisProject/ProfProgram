@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	    str1=prompt("Enter Email");
+        var len=str1.length-1;
+        if(str1.indexOf("@")==-1 || str1.indexOf(".")==-1||str1.indexOf("@")==len || str1.indexOf(".")==len|| str1.lastIndexOf(".")<str1.indexOf("@"))
+        	   document.write("invalid email");
+       else
+          document.write("Valid email"); 	
+
+</script>
+</body>
+</html>

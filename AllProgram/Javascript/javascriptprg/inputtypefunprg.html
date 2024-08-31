@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+		<script type="text/javascript">
+			function printName()
+			{
+				//document.write("<h2>Name:"+document.f1.txt_name.value+"</h2>")
+			    document.write("<h2>Name:"+document.getElementById("txt1").value+"</h2>")
+			}
+		</script>
+
+</head>
+<body>
+<form name="f1" id="frm">
+	Name:<input type="text" name="txt_name" id="txt1">
+	<input type="button" onclick="printName()" value="click me">
+</form>
+</body>
+</html>

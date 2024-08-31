@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	
+class Employee {
+  constructor(name, salary) {
+    this.name = name;
+    this.salary = salary;
+  }
+
+  displayDetails() {
+    document.write("Name:"+this.name+"<br>");
+    document.write("salary:"+this.salary+"<br>");
+
+  }
+}
+
+
+class Manager extends Employee {
+  constructor(name, salary, incentive) {
+    super(name, salary);
+    this.incentive = incentive;
+  }
+
+  totalSal() {
+    const totalSalary = this.salary + this.incentive;
+    document.write("Total Salary:"+totalSalary)
+    
+  }
+}
+
+
+const emp1 = new Employee("Trupti", 50000);
+emp1.displayDetails();
+
+const manager1 = new Manager("Dipti", 70000, 20000);
+manager1.displayDetails(); 
+manager1.totalSal();      
+
+</script>
+</body>
+</html>

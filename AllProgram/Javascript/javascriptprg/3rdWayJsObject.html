@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	function person(id,name){
+		this.id=id;
+		this.name=name;
+		this.displayPerson=function()
+		{
+			document.write("<br>person id:"+this.id);
+			document.write("<br>person name:"+this.name);
+		}
+	}
+
+	var p=new person(200,"Trupti");
+	p.displayPerson();
+</script>
+</body>
+</html>
