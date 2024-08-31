@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Animal Information Form</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}" />
+</head>
+<body>
+<div class="container">
+    <h2>Animal Information</h2>
+    <form th:action="@{/save}" th:object="${animal}" method="post" enctype="multipart/form-data">
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" th:value="*{name}" required />
+        </div>
+        <div>
+            <label for="category">Category:</label>
+            <select id="category" name="category" th:value="*{category}" required>
+                <option value="Mammal">Mammal</option>
+                <option value="Bird">Bird</option>
+                <option value="Reptile">Reptile</option>
+                <option value="Fish">Fish</option>
+                <option value="Amphibian">Amphibian</option>
+            </select>
+        </div>
+        <div>
+            <label for="image">Image:</label>
+            <input type="file" id="image" name="imageFile" required />
+        </div>
+        <div>
+            <label for="description">Description:</label>
+            <textarea id="description" name="description" th:text="*{description}" required></textarea>
+        </div>
+        <div>
+            <label for="lifeExpectancy">Life Expectancy:</label>
+            <select id="lifeExpectancy" name="lifeExpectancy" th:value="*{lifeExpectancy}" required>
+                <option value="0-1">0-1 years</option>
+                <option value="2-5">2-5 years</option>
+                <option value="5-10">5-10 years</option>
+                <option value="10+">10+ years</option>
+            </select>
+        </div>
+        <div>
+            <!-- Simple Captcha or Google reCAPTCHA -->
+            <label for="captcha">Captcha:</label>
+            <input type="text" id="captcha" name="captcha" required />
+        </div>
+        <div>
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+</div>
+</body>
+</html>
