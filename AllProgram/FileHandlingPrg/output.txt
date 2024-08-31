@@ -1,0 +1,3 @@
+Hello, World!
+This is a test program.
+Writing text to a file using fprintf() in C.
